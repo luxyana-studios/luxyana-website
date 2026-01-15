@@ -1,36 +1,40 @@
 'use client';
 
-import Link from "next/link";
+import Link from 'next/link';
 
 export default function Blog() {
   const posts = [
     {
       title: "Why We're Building Apps",
-      excerpt: "After 3 years of professional development, we decided to build our own products. Here's why.",
-      date: "Coming Soon",
-      slug: "why-we-are-building-apps",
-      readTime: "5 min read",
+      excerpt:
+        "After 3 years of professional development, we decided to build our own products. Here's why.",
+      date: 'Coming Soon',
+      slug: 'why-we-are-building-apps',
+      readTime: '5 min read',
     },
     {
       title: "Our First App: What We're Learning",
-      excerpt: "Building our first app taught us a lot about users, design, and what it takes to ship quality.",
-      date: "Coming Soon",
-      slug: "first-app-learnings",
-      readTime: "7 min read",
+      excerpt:
+        'Building our first app taught us a lot about users, design, and what it takes to ship quality.',
+      date: 'Coming Soon',
+      slug: 'first-app-learnings',
+      readTime: '7 min read',
     },
     {
-      title: "Ethical Indie App Development",
-      excerpt: "How we're approaching app development with ethics at the forefront, not as an afterthought.",
-      date: "Coming Soon",
-      slug: "ethical-indie-development",
-      readTime: "8 min read",
+      title: 'Ethical Indie App Development',
+      excerpt:
+        "How we're approaching app development with ethics at the forefront, not as an afterthought.",
+      date: 'Coming Soon',
+      slug: 'ethical-indie-development',
+      readTime: '8 min read',
     },
     {
       title: "The Indie Developer's Playbook",
-      excerpt: "Strategic decisions we made to bootstrap 6 apps in Year 1 without external funding.",
-      date: "Coming Soon",
-      slug: "indie-developer-playbook",
-      readTime: "10 min read",
+      excerpt:
+        'Strategic decisions we made to bootstrap 6 apps in Year 1 without external funding.',
+      date: 'Coming Soon',
+      slug: 'indie-developer-playbook',
+      readTime: '10 min read',
     },
   ];
 
@@ -43,10 +47,27 @@ export default function Blog() {
             Luxyana
           </Link>
           <div className="flex gap-8">
-            <Link href="/about" className="hover:text-brand-primary transition">About</Link>
-            <Link href="/apps" className="hover:text-brand-primary transition">Apps</Link>
-            <Link href="/blog" className="text-brand-primary font-semibold">Blog</Link>
-            <Link href="/contact" className="hover:text-brand-primary transition">Contact</Link>
+            <Link
+              href="/about"
+              className="text-gray-900 dark:text-white hover:text-brand-primary transition"
+            >
+              About
+            </Link>
+            <Link
+              href="/apps"
+              className="text-gray-900 dark:text-white hover:text-brand-primary transition"
+            >
+              Apps
+            </Link>
+            <Link href="/blog" className="text-brand-primary font-semibold">
+              Blog
+            </Link>
+            <Link
+              href="/contact"
+              className="text-gray-900 dark:text-white hover:text-brand-primary transition"
+            >
+              Contact
+            </Link>
           </div>
         </div>
       </nav>
@@ -55,9 +76,10 @@ export default function Blog() {
       <section className="pt-32 pb-20 px-4">
         <div className="max-w-3xl mx-auto">
           <div className="mb-16">
-            <h1 className="text-5xl font-bold mb-4">Blog</h1>
-            <p className="text-xl text-gray-600 dark:text-gray-400">
-              Follow our journey building 6 apps in Year 1. We share learnings, challenges, and wins.
+            <h1 className="text-5xl font-bold mb-4 dark:text-white">Blog</h1>
+            <p className="text-xl text-gray-600 dark:text-gray-100">
+              Follow our journey building 6 apps in Year 1. We share learnings,
+              challenges, and wins.
             </p>
           </div>
 
@@ -70,7 +92,7 @@ export default function Blog() {
               >
                 <div className="flex justify-between items-start mb-4">
                   <div>
-                    <h2 className="text-2xl font-bold group-hover:text-brand-primary transition">
+                    <h2 className="text-2xl font-bold group-hover:text-brand-primary transition dark:text-white">
                       {post.title}
                     </h2>
                   </div>
@@ -78,11 +100,13 @@ export default function Blog() {
                     {post.date}
                   </span>
                 </div>
-                <p className="text-gray-600 dark:text-gray-400 mb-4">
+                <p className="text-gray-600 dark:text-gray-100 mb-4">
                   {post.excerpt}
                 </p>
                 <div className="flex gap-4 items-center">
-                  <span className="text-sm text-gray-500">📖 {post.readTime}</span>
+                  <span className="text-sm text-gray-500">
+                    📖 {post.readTime}
+                  </span>
                   <button className="text-brand-primary font-semibold hover:text-brand-secondary transition">
                     Read More →
                   </button>
@@ -94,7 +118,10 @@ export default function Blog() {
           {/* Newsletter CTA */}
           <div className="mt-16 p-8 bg-gradient-to-r from-brand-primary to-brand-secondary rounded-lg text-white">
             <h2 className="text-3xl font-bold mb-4">Stay Updated</h2>
-            <p className="mb-6">Subscribe to our newsletter to get updates about new apps, blog posts, and our journey.</p>
+            <p className="mb-6">
+              Subscribe to our newsletter to get updates about new apps, blog
+              posts, and our journey.
+            </p>
             <form className="flex flex-col sm:flex-row gap-4">
               <input
                 type="email"
@@ -113,7 +140,10 @@ export default function Blog() {
 
           {/* Links */}
           <div className="mt-16 text-center">
-            <Link href="/" className="px-6 py-3 bg-brand-primary text-white rounded-lg hover:bg-brand-secondary transition font-semibold">
+            <Link
+              href="/"
+              className="px-6 py-3 bg-brand-primary text-white rounded-lg hover:bg-brand-secondary transition font-semibold"
+            >
               Back Home
             </Link>
           </div>
