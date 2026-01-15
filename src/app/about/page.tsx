@@ -40,7 +40,9 @@ export default function About() {
       {/* Content */}
       <section className="pt-32 pb-20 px-4">
         <div className="max-w-3xl mx-auto">
-          <h1 className="text-5xl font-bold mb-8">About Luxyana</h1>
+          <h1 className="text-5xl font-bold mb-8 dark:text-white">
+            About Luxyana
+          </h1>
 
           {/* Story */}
           <div className="mb-16">
