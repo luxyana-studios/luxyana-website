@@ -7,6 +7,9 @@ export const metadata: Metadata = {
     'Building lovable, ethical, quality-first indie apps for learning and entertainment.',
   authors: [{ name: 'David & James' }],
   metadataBase: new URL('https://luxyana.com'),
+  icons: {
+    icon: '/favicon.svg',
+  },
 };
 
 export default function RootLayout({

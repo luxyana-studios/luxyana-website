@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Blog() {
   const posts = [
@@ -43,8 +44,20 @@ export default function Blog() {
       {/* Header */}
       <nav className="fixed top-0 w-full bg-white/80 dark:bg-brand-dark/80 backdrop-blur-md z-50 border-b border-gray-200 dark:border-gray-800">
         <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-          <Link href="/" className="text-2xl font-bold text-brand-primary">
-            Luxyana
+          <Link
+            href="/"
+            className="flex items-center gap-2 hover:opacity-80 transition"
+          >
+            <Image
+              src="/panda.jpeg"
+              alt="Luxyana"
+              width={40}
+              height={40}
+              className="w-10 h-10 rounded-full"
+            />
+            <span className="text-2xl font-bold text-brand-primary">
+              Luxyana
+            </span>
           </Link>
           <div className="flex gap-8">
             <Link
