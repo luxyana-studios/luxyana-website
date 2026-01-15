@@ -1,0 +1,117 @@
+'use client';
+
+import Link from "next/link";
+
+export default function About() {
+  return (
+    <main className="min-h-screen bg-gradient-to-br from-white to-brand-light dark:from-brand-dark dark:to-gray-900">
+      {/* Header */}
+      <nav className="fixed top-0 w-full bg-white/80 dark:bg-brand-dark/80 backdrop-blur-md z-50 border-b border-gray-200 dark:border-gray-800">
+        <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+          <Link href="/" className="text-2xl font-bold text-brand-primary">
+            Luxyana
+          </Link>
+          <div className="flex gap-8">
+            <Link href="/about" className="text-brand-primary font-semibold">About</Link>
+            <Link href="/apps" className="hover:text-brand-primary transition">Apps</Link>
+            <Link href="/blog" className="hover:text-brand-primary transition">Blog</Link>
+            <Link href="/contact" className="hover:text-brand-primary transition">Contact</Link>
+          </div>
+        </div>
+      </nav>
+
+      {/* Content */}
+      <section className="pt-32 pb-20 px-4">
+        <div className="max-w-3xl mx-auto">
+          <h1 className="text-5xl font-bold mb-8">About Luxyana</h1>
+
+          {/* Story */}
+          <div className="mb-16">
+            <h2 className="text-3xl font-bold mb-6">Our Story</h2>
+            <p className="text-lg text-gray-600 dark:text-gray-400 mb-4">
+              David and James are experienced React Native developers who decided now is the right moment to build their own products.
+            </p>
+            <p className="text-lg text-gray-600 dark:text-gray-400 mb-4">
+              After 3 years of professional development, we realized that the best way to create products we truly believe in is to own them ourselves.
+            </p>
+            <p className="text-lg text-gray-600 dark:text-gray-400">
+              Luxyana was born from a passion for quality, ethics in technology, and creating apps that genuinely solve real problems.
+            </p>
+          </div>
+
+          {/* Mission */}
+          <div className="mb-16 p-8 bg-brand-primary/10 rounded-lg border-l-4 border-brand-primary">
+            <h2 className="text-3xl font-bold mb-4">Our Mission</h2>
+            <p className="text-lg font-semibold text-brand-primary">
+              Build lovable, ethical, quality-first indie apps that make a real difference in people's lives.
+            </p>
+          </div>
+
+          {/* Team */}
+          <div className="mb-16">
+            <h2 className="text-3xl font-bold mb-8">Meet the Team</h2>
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="p-6 rounded-lg border border-gray-200 dark:border-gray-700">
+                <div className="text-5xl mb-4">👨‍💻</div>
+                <h3 className="text-2xl font-bold mb-2">David</h3>
+                <p className="text-gray-600 dark:text-gray-400 mb-3">Co-founder, Developer</p>
+                <p className="text-sm text-gray-600 dark:text-gray-400">
+                  3 years React Native. Full-stack: Frontend, Backend, DevOps. Architecture enthusiast.
+                </p>
+              </div>
+              <div className="p-6 rounded-lg border border-gray-200 dark:border-gray-700">
+                <div className="text-5xl mb-4">👨‍💻</div>
+                <h3 className="text-2xl font-bold mb-2">James</h3>
+                <p className="text-gray-600 dark:text-gray-400 mb-3">Co-founder, Developer</p>
+                <p className="text-sm text-gray-600 dark:text-gray-400">
+                  3 years React Native. Full-stack: Frontend, Backend, DevOps. Product thinker.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Values */}
+          <div className="mb-16">
+            <h2 className="text-3xl font-bold mb-8">Our Values</h2>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="p-6 bg-white dark:bg-gray-800 rounded-lg">
+                <h3 className="font-bold text-lg mb-2">Quality First</h3>
+                <p className="text-gray-600 dark:text-gray-400 text-sm">
+                  No compromises on UX, performance, or reliability.
+                </p>
+              </div>
+              <div className="p-6 bg-white dark:bg-gray-800 rounded-lg">
+                <h3 className="font-bold text-lg mb-2">Ethical & Responsible</h3>
+                <p className="text-gray-600 dark:text-gray-400 text-sm">
+                  Thoughtful use of technology. Respect user privacy.
+                </p>
+              </div>
+              <div className="p-6 bg-white dark:bg-gray-800 rounded-lg">
+                <h3 className="font-bold text-lg mb-2">Problem-Solving</h3>
+                <p className="text-gray-600 dark:text-gray-400 text-sm">
+                  Build for real problems. Focus on genuine value.
+                </p>
+              </div>
+              <div className="p-6 bg-white dark:bg-gray-800 rounded-lg">
+                <h3 className="font-bold text-lg mb-2">Indie Spirit</h3>
+                <p className="text-gray-600 dark:text-gray-400 text-sm">
+                  Authentic, long-term thinking. Build what we're proud of.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Links */}
+          <div className="flex gap-4">
+            <Link href="/" className="px-6 py-3 bg-brand-primary text-white rounded-lg hover:bg-brand-secondary transition font-semibold">
+              Back Home
+            </Link>
+            <a href="https://github.com/luxyana-studios/luxyana-business-plan" target="_blank" className="px-6 py-3 border-2 border-brand-primary text-brand-primary rounded-lg hover:bg-brand-primary hover:text-white transition font-semibold">
+              View Business Plan
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+  );
+}
