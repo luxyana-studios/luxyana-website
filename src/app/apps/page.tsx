@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
+import MobileMenu from '@/components/MobileMenu';
 
 export default function Apps() {
   const apps = [
@@ -71,7 +72,7 @@ export default function Apps() {
               Luxyana
             </span>
           </Link>
-          <div className="flex gap-8">
+          <div className="hidden md:flex gap-8">
             <Link
               href="/about"
               className="text-gray-900 dark:text-white hover:text-brand-primary transition"
@@ -94,6 +95,7 @@ export default function Apps() {
               Contact
             </Link>
           </div>
+          <MobileMenu />
         </div>
       </nav>
 

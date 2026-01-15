@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
+import MobileMenu from '@/components/MobileMenu';
 
 export default function Terms() {
   return (
@@ -24,12 +25,9 @@ export default function Terms() {
               Luxyana
             </span>
           </Link>
-          <Link
-            href="/"
-            className="text-gray-900 dark:text-white hover:text-brand-primary transition"
-          >
-            Back Home
-          </Link>
+          <MobileMenu />
+        </div>
+      </nav>
         </div>
       </nav>
 
