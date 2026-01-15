@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export default function Contact() {
   return (
-    <main className="min-h-screen bg-gradient-to-br from-white to-brand-light dark:from-brand-dark dark:to-gray-900">
+    <main className="min-h-screen">
       {/* Header */}
       <nav className="fixed top-0 w-full bg-white/80 dark:bg-brand-dark/80 backdrop-blur-md z-50 border-b border-gray-200 dark:border-gray-800">
         <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">

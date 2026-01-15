@@ -51,7 +51,7 @@ export default function Apps() {
   ];
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-white to-brand-light dark:from-brand-dark dark:to-gray-900">
+    <main className="min-h-screen">
       {/* Header */}
       <nav className="fixed top-0 w-full bg-white/80 dark:bg-brand-dark/80 backdrop-blur-md z-50 border-b border-gray-200 dark:border-gray-800">
         <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
@@ -102,7 +102,7 @@ export default function Apps() {
             {apps.map((app, index) => (
               <div
                 key={index}
-                className="group p-8 rounded-lg border border-gray-200 dark:border-gray-700 hover:border-brand-primary hover:shadow-lg transition"
+                className="group p-8 rounded-lg border border-gray-200 dark:border-gray-700 bg-white/40 dark:bg-gray-800/40 backdrop-blur-sm hover:border-brand-primary hover:shadow-lg transition"
               >
                 <div className="text-5xl mb-4">{app.icon}</div>
                 <h3 className="text-2xl font-bold mb-2 dark:text-white">
@@ -124,7 +124,7 @@ export default function Apps() {
           </div>
 
           {/* Timeline */}
-          <div className="mb-16 p-8 bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700">
+          <div className="mb-16 p-8 bg-white/40 dark:bg-gray-800/40 backdrop-blur-sm rounded-lg border border-gray-200 dark:border-gray-700">
             <h2 className="text-3xl font-bold mb-8 dark:text-white">
               Launch Timeline
             </h2>
@@ -158,7 +158,7 @@ export default function Apps() {
               What You Can Expect
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
-              <div className="p-6 bg-white dark:bg-gray-800 rounded-lg">
+              <div className="p-6 bg-white/40 dark:bg-gray-800/40 backdrop-blur-sm rounded-lg">
                 <div className="text-3xl mb-2">✨</div>
                 <h3 className="font-bold text-lg mb-2 dark:text-white">
                   Exceptional Design
@@ -167,7 +167,7 @@ export default function Apps() {
                   Thoughtful UX and attention to detail in every screen.
                 </p>
               </div>
-              <div className="p-6 bg-white dark:bg-gray-800 rounded-lg">
+              <div className="p-6 bg-white/40 dark:bg-gray-800/40 backdrop-blur-sm rounded-lg">
                 <div className="text-3xl mb-2">🚀</div>
                 <h3 className="font-bold text-lg mb-2 dark:text-white">
                   Lightning Fast
@@ -176,7 +176,7 @@ export default function Apps() {
                   Optimized for performance and instant loading times.
                 </p>
               </div>
-              <div className="p-6 bg-white dark:bg-gray-800 rounded-lg">
+              <div className="p-6 bg-white/40 dark:bg-gray-800/40 backdrop-blur-sm rounded-lg">
                 <div className="text-3xl mb-2">🔒</div>
                 <h3 className="font-bold text-lg mb-2 dark:text-white">
                   Privacy First
@@ -185,7 +185,7 @@ export default function Apps() {
                   Your data is yours. No sketchy tracking or selling data.
                 </p>
               </div>
-              <div className="p-6 bg-white dark:bg-gray-800 rounded-lg">
+              <div className="p-6 bg-white/40 dark:bg-gray-800/40 backdrop-blur-sm rounded-lg">
                 <div className="text-3xl mb-2">📱</div>
                 <h3 className="font-bold text-lg mb-2 dark:text-white">
                   Cross-Platform

@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-gradient-to-br from-white to-brand-light dark:from-brand-dark dark:to-gray-900">
+    <main className="min-h-screen">
       {/* Navigation */}
       <nav className="fixed top-0 w-full bg-white/80 dark:bg-brand-dark/80 backdrop-blur-md z-50 border-b border-gray-200 dark:border-gray-800">
         <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
@@ -39,8 +39,8 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-4">
-        <div className="max-w-6xl mx-auto text-center">
+      <section className="relative pt-32 pb-20 px-4 overflow-hidden min-h-[60vh] flex items-center">
+        <div className="max-w-6xl mx-auto text-center relative z-10">
           <h1 className="text-6xl font-bold mb-6 bg-gradient-to-r from-brand-primary to-brand-secondary bg-clip-text text-transparent">
             Quality Indie Apps
           </h1>
@@ -60,14 +60,14 @@ export default function Home() {
       </section>
 
       {/* Features Section */}
-      <section className="py-20 px-4 bg-white dark:bg-gray-800/50">
+      <section className="py-20 px-4">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold text-center mb-16 dark:text-white">
             Why Luxyana
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
             {/* Feature 1 */}
-            <div className="p-8 rounded-lg border border-gray-200 dark:border-gray-700">
+            <div className="p-8 rounded-lg border border-gray-200 dark:border-gray-700 bg-white/40 dark:bg-gray-800/40 backdrop-blur-sm">
               <div className="text-4xl mb-4">✨</div>
               <h3 className="text-xl font-bold mb-3 dark:text-white">
                 Quality First
@@ -79,7 +79,7 @@ export default function Home() {
             </div>
 
             {/* Feature 2 */}
-            <div className="p-8 rounded-lg border border-gray-200 dark:border-gray-700">
+            <div className="p-8 rounded-lg border border-gray-200 dark:border-gray-700 bg-white/40 dark:bg-gray-800/40 backdrop-blur-sm">
               <div className="text-4xl mb-4">🛡️</div>
               <h3 className="text-xl font-bold mb-3 dark:text-white">
                 Ethical & Responsible
@@ -91,7 +91,7 @@ export default function Home() {
             </div>
 
             {/* Feature 3 */}
-            <div className="p-8 rounded-lg border border-gray-200 dark:border-gray-700">
+            <div className="p-8 rounded-lg border border-gray-200 dark:border-gray-700 bg-white/40 dark:bg-gray-800/40 backdrop-blur-sm">
               <div className="text-4xl mb-4">🎯</div>
               <h3 className="text-xl font-bold mb-3 dark:text-white">
                 Real Solutions
@@ -133,7 +133,7 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-4 bg-brand-primary text-white">
+      <section className="py-20 px-4 bg-gradient-to-br from-brand-dark/90 to-gray-800/90 backdrop-blur-sm text-white">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold mb-6">Stay Updated</h2>
           <p className="text-lg mb-8 opacity-95">
